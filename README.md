@@ -21,3 +21,10 @@ conn = pyRserve.connect()
 # test a R function
 conn.eval('rnorm(100)')
 ```
+
+* stop Rserve
+
+```bash
+container_id=`docker ps | grep 'rserve:v1.0' | awk '{print $1}'`
+docker stop $container_id
+```
