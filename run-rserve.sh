@@ -1,5 +1,9 @@
-/usr/local/lib/R/site-library/Rserve/libs/Rserve --RS-enable-remote --no-save
+/usr/local/lib/R/site-library/Rserve/libs/Rserve \
+    --RS-enable-remote \
+    --RS-source /home/rstudio/kitematic/funs.R \
+    --no-save
+
 while true
 do
-    sleep 60
+    sleep 10
 done
