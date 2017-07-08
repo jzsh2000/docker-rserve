@@ -12,7 +12,7 @@ docker build -t rserve:v1.0 .
 docker run -d -p 6311:6311 rserve:v1.0
 ```
 
-* connect to Rserve
+* connect to Rserve (in python)
 
 ```python
 import pyRserve
